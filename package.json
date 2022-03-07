@@ -1,0 +1,53 @@
+{
+  "name": "@lujs/middleware",
+  "author": "lujs",
+  "license": "MIT",
+  "version": "0.0.5",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "ts-node ./src/index.ts",
+    "build": "webpack --env production ",
+    "start": "webpack --watch ",
+    "test": "jest --watchAll ",
+    "prepublishOnly": "npm run build && np --no-cleanup --yolo --no-publish"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/plugin-proposal-decorators": "^7.16.7",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-typescript": "^7.16.5",
+    "@types/clone": "^2.1.1",
+    "@types/jest": "^27.0.3",
+    "@types/lodash.clonedeep": "^4.5.6",
+    "@types/node": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
+    "babel-jest": "^27.4.5",
+    "babel-plugin-lodash": "^3.3.4",
+    "clean-webpack-plugin": "^4.0.0",
+    "declaration-bundler-webpack-plugin": "^1.0.3",
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.4.5",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.5.1",
+    "terser-webpack-plugin": "^5.3.0",
+    "ts-jest": "^27.1.2",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.4.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4",
+    "webpack": "^5.65.0",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.9.1",
+    "yorkie": "^2.0.0"
+  }
+}
